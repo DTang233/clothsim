@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		10024600973143068F24671A /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 145A511A145B4F0B82033DA6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				96C58A261A464AE7BB839B28 /* CMake Rules */,
+			);
+			dependencies = (
+				184B4D9BDA9F42579B005359 /* PBXTargetDependency */,
+				C2B1E254A3B24BD39DB51AD4 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		7E9F9D0FDA8A49F08791C326 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 10062826A32C417783003BAD /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				7957BCC190BE46D88159D800 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		A721ECDB051E4F65A8E821CB /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1645201EE6CE4AABA8DCCA30 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				BC6D104FBE9F43C9878E32D8 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				9150C91A4E1F4AECA963652D /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0AC30449604D4AFA86698A9F /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/color.cpp */ = {isa = PBXBuildFile; fileRef = 97DC287585AB4AA4AE33654B /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/color.cpp */; };
+		3FD4C32271974FD3BF5B7F8E /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix4x4.cpp */ = {isa = PBXBuildFile; fileRef = 457883B44A654ACCBAF32E3A /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix4x4.cpp */; };
+		3FD8FD05DBBB4A839E7EBA27 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = 114F7C5A5DD140319C773006 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/lodepng.cpp */; };
+		52BF1B09D9FC4E9D8C1EDA08 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = BC73F524B2664CE684E7F28E /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/quaternion.cpp */; };
+		5859B7A8F32A4C3DA86E7C6C /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/base64.cpp */ = {isa = PBXBuildFile; fileRef = 08B955615F9A4632B9FCECEF /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/base64.cpp */; };
+		5AA16C016EF94B33B931750D /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector3D.cpp */ = {isa = PBXBuildFile; fileRef = B1254320ECB147E29C2A4E28 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector3D.cpp */; };
+		8391506A6EB943689326289A /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/spectrum.cpp */ = {isa = PBXBuildFile; fileRef = A0BD18B90FCD4BA5984F5246 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/spectrum.cpp */; };
+		BD67C7C6FA354C30A8372579 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/complex.cpp */ = {isa = PBXBuildFile; fileRef = A8EEC8211A4044AEA9C57751 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/complex.cpp */; };
+		D01803333CA6482A9C484D63 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/tinyxml2.cpp */ = {isa = PBXBuildFile; fileRef = 54A077382D5F499E87F33954 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/tinyxml2.cpp */; };
+		E81E519EB3B64BA5B2D0F1E3 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix3x3.cpp */ = {isa = PBXBuildFile; fileRef = D908C7455B9E4AEE8DF6BA93 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix3x3.cpp */; };
+		EB8C0AA6BE3E45AC830FF9A5 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D16CD65D32694837A548D5FC /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/CMakeLists.txt */; };
+		FA1E38B7DBAD43F881A09371 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector4D.cpp */ = {isa = PBXBuildFile; fileRef = 0E6679F4FBC54CC791FFDE04 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector4D.cpp */; };
+		FD7257D11D334EE6BB0C7EE9 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector2D.cpp */ = {isa = PBXBuildFile; fileRef = 90EF4F2012324267A0763B96 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector2D.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4CB7EE6767E446CB8ADB6E48 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		67C542E3FE9440C49A391AFA /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		918AAA44C3EA4A4BB77ECD7E /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		D65729DAF10742CCB57C06CE /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		05211880337D44E083062853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D30F026AB954294A0D9BB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E9F9D0FDA8A49F08791C326;
+			remoteInfo = ZERO_CHECK;
+		};
+		251EBD3DC0E947ABA4295099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D30F026AB954294A0D9BB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10024600973143068F24671A;
+			remoteInfo = ALL_BUILD;
+		};
+		BF6E154F07CC4B3897832044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D30F026AB954294A0D9BB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B5930F71314B4397BC80EA;
+			remoteInfo = CGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08B955615F9A4632B9FCECEF /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		0E6679F4FBC54CC791FFDE04 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		114F7C5A5DD140319C773006 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = src/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		19E6812BACA648E1B0177C71 /* CGL */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		457883B44A654ACCBAF32E3A /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+		54A077382D5F499E87F33954 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		848BDDD6715044BEBE5ECD12 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		90EF4F2012324267A0763B96 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		97DC287585AB4AA4AE33654B /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = src/color.cpp; sourceTree = SOURCE_ROOT; };
+		A0BD18B90FCD4BA5984F5246 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/spectrum.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spectrum.cpp; path = src/spectrum.cpp; sourceTree = SOURCE_ROOT; };
+		A8EEC8211A4044AEA9C57751 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		B1254320ECB147E29C2A4E28 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		BC73F524B2664CE684E7F28E /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		D16CD65D32694837A548D5FC /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D908C7455B9E4AEE8DF6BA93 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3A0F91C8238F499AB76B9907 /* CGL */ = {
+			isa = PBXGroup;
+			children = (
+				9BD845319B6543F9A82BB8F6 /* Source Files */,
+				D16CD65D32694837A548D5FC /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/CMakeLists.txt */,
+			);
+			name = CGL;
+			sourceTree = "<group>";
+		};
+		8F20884832DF45C7A50F28F3 = {
+			isa = PBXGroup;
+			children = (
+				A404CADD27C24749AE9EB1C0 /* ALL_BUILD */,
+				3A0F91C8238F499AB76B9907 /* CGL */,
+				BEAD5F36B92746C2A2A9E44C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BD845319B6543F9A82BB8F6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				08B955615F9A4632B9FCECEF /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/base64.cpp */,
+				97DC287585AB4AA4AE33654B /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/color.cpp */,
+				A8EEC8211A4044AEA9C57751 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/complex.cpp */,
+				114F7C5A5DD140319C773006 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/lodepng.cpp */,
+				D908C7455B9E4AEE8DF6BA93 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix3x3.cpp */,
+				457883B44A654ACCBAF32E3A /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix4x4.cpp */,
+				BC73F524B2664CE684E7F28E /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/quaternion.cpp */,
+				A0BD18B90FCD4BA5984F5246 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/spectrum.cpp */,
+				54A077382D5F499E87F33954 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/tinyxml2.cpp */,
+				90EF4F2012324267A0763B96 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector2D.cpp */,
+				B1254320ECB147E29C2A4E28 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector3D.cpp */,
+				0E6679F4FBC54CC791FFDE04 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector4D.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A404CADD27C24749AE9EB1C0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				BA48D97FB01347328D912813 /* CMake Rules */,
+				848BDDD6715044BEBE5ECD12 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BA48D97FB01347328D912813 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BEAD5F36B92746C2A2A9E44C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19E6812BACA648E1B0177C71 /* CGL */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27B5930F71314B4397BC80EA /* CGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BF72C44245D4521886FE6DD /* Build configuration list for PBXNativeTarget "CGL" */;
+			buildPhases = (
+				6722513CB23A460BB952F093 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGL;
+			productName = CGL;
+			productReference = 19E6812BACA648E1B0177C71 /* CGL */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D30F026AB954294A0D9BB5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 0D1452DFA2484AC3B0A11DC1 /* Build configuration list for PBXProject "CGL" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				D65729DAF10742CCB57C06CE /* Debug */,
+				4CB7EE6767E446CB8ADB6E48 /* Release */,
+				918AAA44C3EA4A4BB77ECD7E /* MinSizeRel */,
+				67C542E3FE9440C49A391AFA /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8F20884832DF45C7A50F28F3;
+			projectDirPath = ../../CGL;
+			projectRoot = "";
+			targets = (
+				10024600973143068F24671A /* ALL_BUILD */,
+				27B5930F71314B4397BC80EA /* CGL */,
+				7E9F9D0FDA8A49F08791C326 /* ZERO_CHECK */,
+				A721ECDB051E4F65A8E821CB /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7957BCC190BE46D88159D800 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL -f /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		8C47BAA7291A411B89B46176 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		96C58A261A464AE7BB839B28 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL -f /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		B9C90B4C55E441A5B3194CC5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		BC6D104FBE9F43C9878E32D8 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL -f /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		F5FE6A5BE49D4341B3841324 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6722513CB23A460BB952F093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5859B7A8F32A4C3DA86E7C6C /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/base64.cpp */,
+				0AC30449604D4AFA86698A9F /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/color.cpp */,
+				BD67C7C6FA354C30A8372579 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/complex.cpp */,
+				3FD8FD05DBBB4A839E7EBA27 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/lodepng.cpp */,
+				E81E519EB3B64BA5B2D0F1E3 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix3x3.cpp */,
+				3FD4C32271974FD3BF5B7F8E /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/matrix4x4.cpp */,
+				52BF1B09D9FC4E9D8C1EDA08 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/quaternion.cpp */,
+				8391506A6EB943689326289A /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/spectrum.cpp */,
+				D01803333CA6482A9C484D63 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/tinyxml2.cpp */,
+				FD7257D11D334EE6BB0C7EE9 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector2D.cpp */,
+				5AA16C016EF94B33B931750D /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector3D.cpp */,
+				FA1E38B7DBAD43F881A09371 /* /Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/src/vector4D.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		184B4D9BDA9F42579B005359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B5930F71314B4397BC80EA /* CGL */;
+			targetProxy = BF6E154F07CC4B3897832044 /* PBXContainerItemProxy */;
+		};
+		9150C91A4E1F4AECA963652D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10024600973143068F24671A /* ALL_BUILD */;
+			targetProxy = 251EBD3DC0E947ABA4295099 /* PBXContainerItemProxy */;
+		};
+		C2B1E254A3B24BD39DB51AD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E9F9D0FDA8A49F08791C326 /* ZERO_CHECK */;
+			targetProxy = 05211880337D44E083062853 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ADA08F811CB46F39C55DA76 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4195D1C795CF4B06B01A48FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		56C0B04C53304558B5230F97 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		618782D5AD044B1EA989F683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6F39903725E844AFBD9F1FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NANOGUI_SHARED,NVG_SHARED,GLAD_GLAPI_EXPORT,NANOGUI_GLAD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glad/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glfw/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/nanovg/src","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/eigen","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64       -Wno-constant-conversion  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		781CDA1B40EA4514BB5E47DC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/build";
+			};
+			name = MinSizeRel;
+		};
+		78CFFA8CB16F4FA496DB2254 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/build";
+			};
+			name = RelWithDebInfo;
+		};
+		7B0BA837A4034BCAAC304F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NANOGUI_SHARED,NVG_SHARED,GLAD_GLAPI_EXPORT,NANOGUI_GLAD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glad/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glfw/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/nanovg/src","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/eigen","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64        -DNDEBUG -Wno-constant-conversion  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		981E6838780D4AA9A125C1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9A8A4B403F8E4E23B7940989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/build";
+			};
+			name = Release;
+		};
+		A4B301C710CB426D86E5F686 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BF90D3987CED4528BDC9F643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C31E3C20233642A68E94DEA4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C74F25C2820B454AA3453345 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CEF428B198124599A043D9FD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NANOGUI_SHARED,NVG_SHARED,GLAD_GLAPI_EXPORT,NANOGUI_GLAD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glad/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glfw/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/nanovg/src","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/eigen","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64        -DNDEBUG -Wno-constant-conversion  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D71D140B149E4F25B76D128E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D84641EA5829416393CB529B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D9A943469FAB482AB1068567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/build";
+			};
+			name = Debug;
+		};
+		DC44481528C64E77822D1994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		FC2ACCE35B734AA3B58DBC18 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NANOGUI_SHARED,NVG_SHARED,GLAD_GLAPI_EXPORT,NANOGUI_GLAD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glad/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/glfw/include","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/nanovg/src","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/ext/nanogui/ext/eigen","/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64           -DNDEBUG -Wno-constant-conversion  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p4-clothsim-sp20-MaxTang233/build/CGL/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D1452DFA2484AC3B0A11DC1 /* Build configuration list for PBXProject "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A943469FAB482AB1068567 /* Debug */,
+				9A8A4B403F8E4E23B7940989 /* Release */,
+				781CDA1B40EA4514BB5E47DC /* MinSizeRel */,
+				78CFFA8CB16F4FA496DB2254 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		10062826A32C417783003BAD /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618782D5AD044B1EA989F683 /* Debug */,
+				D71D140B149E4F25B76D128E /* Release */,
+				56C0B04C53304558B5230F97 /* MinSizeRel */,
+				C74F25C2820B454AA3453345 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		145A511A145B4F0B82033DA6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4195D1C795CF4B06B01A48FB /* Debug */,
+				981E6838780D4AA9A125C1D1 /* Release */,
+				0ADA08F811CB46F39C55DA76 /* MinSizeRel */,
+				C31E3C20233642A68E94DEA4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1645201EE6CE4AABA8DCCA30 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC44481528C64E77822D1994 /* Debug */,
+				BF90D3987CED4528BDC9F643 /* Release */,
+				A4B301C710CB426D86E5F686 /* MinSizeRel */,
+				D84641EA5829416393CB529B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4BF72C44245D4521886FE6DD /* Build configuration list for PBXNativeTarget "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F39903725E844AFBD9F1FF7 /* Debug */,
+				7B0BA837A4034BCAAC304F19 /* Release */,
+				CEF428B198124599A043D9FD /* MinSizeRel */,
+				FC2ACCE35B734AA3B58DBC18 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D30F026AB954294A0D9BB5F /* Project object */;
+}

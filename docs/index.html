@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <link rel="stylesheet" type="text/css" href="styles.css"> 
+<style>
+  body {
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>
+<title>Cloth Simulator</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+
+
+<body>
+
+<!-- <h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2017 --></h1>
+<h1 align="middle">Cloth Simulator</h1>
+<h2 align="middle">Di Tang</h2>
+
+<br><br>
+
+<div>
+<!-- <p>https://cal-cs184-student.github.io/p4-clothsim-sp20-MaxTang233/.</p> -->
+
+<h2 align="middle">Part 1: Masses and springs</h2>
+   <p class="description"><span style=" font-weight: bold;">Building a grid of masses and springs:</span><br>Images below shows when running <em>./clothsim -f ../scene/pinned2.json</em>, with/without shearing constrain, and with all constrains.</p>
+           <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/p1_1.png" width="480px" />
+                    <figcaption align="middle">./clothsim -f ../scene/pinned2.json</figcaption>
+                </tr>
+            </table>
+        </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/p1_woshear.png" width="480px" />
+                    <figcaption align="middle">Without Shearing</figcaption>
+                </tr>
+            </table>
+        </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/p1_wshear.png" width="480px" />
+                    <figcaption align="middle">With Shearing</figcaption>
+                </tr>
+            </table>
+        </div>
+                <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/p1_all.png" width="480px" />
+                    <figcaption align="middle">With all Constrains</figcaption>
+                </tr>
+            </table>
+        </div>
+
+
+
+  <h2 align="middle">Part 2: Simulation via numerical integration</h2>
+
+   <p class="description"><span style=" font-weight: bold;">ks analysis:</span><br>Below are the images of simulation with different <em>ks</em> from small to large and other parameters stay the same. The first image shows the simulation with <em>ks = 5 N/m</em>, the cloth seems very soft and the internal forces are small, so that it noticeably deformed under the effects of external forces such as gravity. As the <em>ks</em> increases (from <em>500</em> to <em>10000</em>), the cloth’s internal forces increase as well, we can notice that the gravity has less and less effect on the cloth’s shape. When <em>ks = 200000 N/m</em>, the external forces barely affect the cloth’s shape. However, when <em>ks</em> is too large (<em>ks = 350000 N/m</em>), the internal forces exceed the external forces and the cloth starts to squash.</p>
+           <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p2_ks5.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 5 N/m</figcaption>
+                  </td>
+                  <td>
+                    <img src="images/p2_ks500.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 500 N/m</figcaption>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/p2_ks5000.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 5000 N/m</figcaption>
+                  </td>
+                  <td>
+                    <img src="images/p2_ks10000.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 10000 N/m</figcaption>
+                  </td>
+                </tr>
+                  <td>
+                    <img src="images/p2_ks200000.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 200000 N/m</figcaption>
+                  </td>
+                  <td>
+                    <img src="images/p2_ks350000.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 350000 N/m</figcaption>
+                  </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+           <p class="description"><span style=" font-weight: bold;">Density analysis:</span><br>Below are the images of simulation with different <em>density</em> from small to large and other parameters stay the same. The first image shows the simulation with <em>density = 1 g / cm^2</em>. As the <em>density</em> increases, the tension between the springs decreased. However, after the <em>density</em> is large enough, it won’t affect the shape of the cloth anymore as we keep increasing the <em>density</em>.<br></p>
+           <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p2_dens1.png" align="middle" width="400px"/>
+                    <figcaption align="middle">density = 1 g/cm^2</figcaption>
+                  </td>
+                  <td>
+                    <img src="images/p2_dens15.png" align="middle" width="400px"/>
+                    <figcaption align="middle">density = 15 g/cm^2</figcaption>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/p2_dens100.png" align="middle" width="400px"/>
+                    <figcaption align="middle">density = 100 g/cm^2</figcaption>
+                  </td>
+                  <td>
+                    <img src="images/p2_dens10000.png" align="middle" width="400px"/>
+                    <figcaption align="middle">density = 10000 g/cm^2</figcaption>
+                  </td>
+                </tr>
+
+            </table>
+        </div>
+
+          <p class="description"><span style=" font-weight: bold;">Damping analysis:</span><br>Below are the images of simulation with different <em>damping</em> and other parameters stay the same. The first image shows the simulation with <em>damping = 0</em>. When simulation starts, the cloth will drop down quickly and keep moving back and forth. Whereas when <em>damping = 1</em>, the cloth will drop down very slowly and will keep stable at the end. <br></p>
+           <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p2_damp0.png" align="middle" width="400px"/>
+                    <figcaption align="middle">damping = 0</figcaption>
+                  </td>
+                  <td>
+                    <img src="images/p2_damp1.png" align="middle" width="400px"/>
+                    <figcaption align="middle">damping = 1</figcaption>
+                  </td>
+                </tr>
+
+            </table>
+        </div>
+
+          <p class="description">Below is image of <em>scene/pinned4.json</em> in final resting state.<br></p>
+
+
+          <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p2_last.png" align="middle" width="400px"/>
+                    <figcaption align="middle">pinned4</figcaption>
+                  </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+  <h2 align="middle">Part 3: Handling collisions with other objects</h2>
+ <p class="description"><span style=" font-weight: bold;">Handling collisions with spheres:</span><br>Below are the simulation images of collisions with spheres with different <em>ks</em> from small to large and other parameters stay the same. When <em>ks</em> is small (<em>500 N/m</em>), the cloth seemed soft, it has multiple folding. As the <em>ks</em> increases, the number of folding decreases.</p>
+
+    <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p3_ks500.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 500 N/m</figcaption>
+                  </td>
+
+                </tr>
+                <tr>      
+                  <td>
+                    <img src="images/p3_ks5000.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 5000 N/m</figcaption>
+                  </td>
+                </tr>
+                
+                <tr>      
+                  <td>
+                    <img src="images/p3_ks50000.png" align="middle" width="400px"/>
+                    <figcaption align="middle">ks = 50000 N/m</figcaption>
+                  </td>
+                </tr>
+
+            </table>
+        </div>
+   <p class="description"><span style=" font-weight: bold;">Handling collisions with planes:</span><br> Below is the screenshot of the shaded cloth lying peacefully at rest on the plane.</p>
+
+    <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p3_t2.png" align="middle" width="400px"/>
+                    <figcaption align="middle">/scene/plane.json</figcaption>
+                  </td>
+
+                </tr>
+
+            </table>
+        </div>
+  <h2 align="middle">Part 4: Handling self-collisions</h2>
+ <p class="description">Below are the screenshots that document the cloth falls and folds on itself, starting with an early, initial self-collision and ending with the cloth at restful state.</p>
+
+    <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p4_1.png" align="middle" width="400px"/>
+                    <figcaption align="middle">t1</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p4_2.png" align="middle" width="400px"/>
+                    <figcaption align="middle">t2</figcaption>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/p4_3.png" align="middle" width="400px"/>
+                    <figcaption align="middle">t3</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p4_4.png" align="middle" width="400px"/>
+                    <figcaption align="middle">t4</figcaption>
+                  </td>
+
+                </tr>
+
+              </table>
+        </div>
+
+
+ <p class="description">When increasing the density to density = 50 g/cm^2, the force within the cloth deceased and the point masses inside the structure become closer to each other as the cloth fall.</p>
+
+    <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p4_dens50.png" align="middle" width="400px"/>
+                    <figcaption align="middle">density = 50 g/cm^2</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p4_dens50_2.png" align="middle" width="400px"/>
+                    <figcaption align="middle">density = 50 g/cm^2</figcaption>
+                  </td>
+
+                </tr>
+
+
+            </table>
+        </div>
+  <h2 align="middle">Part 5: Shaders</h2>
+ <p class="description"><span style=" font-weight: bold;">Overview:</span><br>The shader program runs in the graphics pipeline and tells computer how to render each pixel. Vertex Shaders transform shape positions into world space and screen space. Fragment Shaders compute the renderings of a shape's colors and other attributes.</p>
+
+  <p class="description"><span style=" font-weight: bold;">Blinn-Phong shading model:</span><br>The Blinn-Phong shading model is basically the effect of ambient plus diffusion plus specular.Below are the screenshots showing those effects.<br></p>
+
+    <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p5_ambient.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Ambient</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p5_diffuse.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Diffuse</figcaption>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/p5_specular.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Specular</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p5_phong.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Blinn-Phong </figcaption>
+                  </td>
+
+                </tr>
+
+              </table>
+        </div>
+
+      <p class="description"><span style=" font-weight: bold;">Texture:</span><br><br></p>
+
+    <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p5_texture.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Texture</figcaption>
+                  </td>
+
+                </tr>
+
+
+              </table>
+        </div>
+     <p class="description"><span style=" font-weight: bold;">Bump & Displacement:</span><br>In bump mapping, we modify the normal vectors of an object so that the fragment shader gives the illusion of detail (such as bumps) on an object. In displacement mapping, we modify the position of vertices to reflect the height map in addition to modifying the normals to be consistent with the new geometry. So that in displacement mapping the details are much more drastic.</p>
+
+         <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p5_bump.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Bump</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p5_dis.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Displacement</figcaption>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/p5_bump16.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Bump -o 16 -a 16</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p5_dis16.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Displacement -o 16 -a 16</figcaption>
+                  </td>
+
+                </tr>
+                  <tr>
+                  <td>
+                    <img src="images/p5_bump128.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Bump -o 128 -a 128</figcaption>
+                  </td>
+
+                  <td>
+                    <img src="images/p5_dis128.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Displacement -o 128 -a 128</figcaption>
+                  </td>
+
+                </tr>
+
+              </table>
+        </div>
+           <p class="description"><span style=" font-weight: bold;">Mirror:</span><br></p>
+               <div align="center">
+            <table style="width=100%">
+                <tr>
+                  <td>
+                    <img src="images/p5_mirror.png" align="middle" width="400px"/>
+                    <figcaption align="middle">Mirror</figcaption>
+                  </td>
+
+                </tr>
+
+
+              </table>
+        </div>
+</body>
+</html>
